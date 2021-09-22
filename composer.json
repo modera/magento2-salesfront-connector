@@ -1,0 +1,18 @@
+{
+    "name": "modera/magento2-salesfront-connector",
+    "description": "Modera Salesfront Integration",
+    "homepage": "https://modera.com/salesfront",
+    "type": "magento2-module",
+    "license": "MIT",
+    "require": {
+        "magento/framework": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Modera\\SalesfrontConnector\\": ""
+        }
+    }
+}

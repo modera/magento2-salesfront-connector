@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/storage/cache-valid-time" method="GET">
+        <service class="Modera\SalesfrontConnector\Api\StorageManagementInterface" method="getCacheValidTime" />
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+    <route url="/V1/vehicle" method="POST">
+        <service class="Modera\SalesfrontConnector\Api\VehicleInterface" method="createVehicle" />
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+    <route url="/V1/vehicle" method="DELETE">
+        <service class="Modera\SalesfrontConnector\Api\VehicleInterface" method="deleteVehicle" />
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+</routes>
